@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>Quick repair - About</title>
+		<title>Quick repair - À PROPOS DE NOUS</title>
 		<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
 		<meta name="keywords" content="">
 		<meta name="description" content="">
@@ -22,6 +22,7 @@
 	<body>
 
 <!-- navigation -->
+
 <?php include_once('nav.php'); ?>
 
 <!-- about header section -->
@@ -39,29 +40,29 @@
 
 				<div class="row">
 					<div class="col-md-offset-2 col-md-8 col-sm-12">
-						<h2>We Offer!</h2>
-						<p> Here are the features, we offer in our self-repairing club.</p>
+						<h2>Nous offrons!</h2>
+						<p> Voici les fonctionnalités que nous proposons dans notre club d'auto-réparation.</p>
 					</div>
 				</div>
 				<div class="row">
 					<div class="col-sm-6 col-md-3">
 						<a href="#"><i class="fa fa-gears"></i></a>
-							<h3>Quick repairation service</h3>
+							<h3>Service de réparation rapide</h3>
 							<p>details</p>
 					</div>
 					<div class="col-sm-6 col-md-3">
 						<a href="#"><i class="fa fa-user-plus"></i></a>
-							<h3>Become a member</h3>
+							<h3>Devenir membre</h3>
 							<p>details</p>
 					</div>
 					<div class="col-sm-6 col-md-3">
 						<a href="#"><i class="fa fa-cog"></i></a>
-							<h3>Be your own repairer</h3>
+							<h3>Soyez votre propre réparateur</h3>
 							<p>details</p>
 					</div>
 					<div class="col-sm-6 col-md-3">
 						<a href="#"><i class="fa fa-cloud"></i></a>
-							<h3>Share knowledge</h3>
+							<h3>Partager le savoir</h3>
 							<p>details</p>
 					</div>
 				</div>
@@ -69,23 +70,23 @@
 				<div class="row">
 					<div class="col-sm-6 col-md-3">
 						<a href="#"><i class="fa fa-video-camera"></i></a>
-							<h3>Tutorials</h3>
+							<h3>Les tutoriels</h3>
 							<p>details</p>
 					</div>
 					<div class="col-sm-6 col-md-3">
 						<a href="#"><i class="fa fa-money"></i></a>
-							<h3>Earn points</h3>
+							<h3>Gagnez des points</h3>
 							<p>details</p>
 					</div>
 					<div class="col-sm-6 col-md-3">
 						<a href="#"><i class="fa fa-wrench"></i></a>
-							<h3>Less-expensive service</h3>
+							<h3>Service moins cher</h3>
 							<p>details</p>
 					</div>
 
 					<div class="col-sm-6 col-md-3">
 						<a href="#"><i class="fa fa-group"></i></a>
-							<h3>Friendly environment</h3>
+							<h3>Environnement amical</h3>
 							<p>details</p>
 					</div>
 				</div>

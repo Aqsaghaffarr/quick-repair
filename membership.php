@@ -20,10 +20,24 @@
 	<!-- google web font css -->
 	<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 
+	 <!-- Icons font CSS-->
+    <link href="vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
+    <link href="vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
+    <!-- Font special for pages-->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+    <!-- Vendor CSS-->
+    <link href="vendor/select2/select2.min.css" rel="stylesheet" media="all">
+    <link href="vendor/datepicker/daterangepicker.css" rel="stylesheet" media="all">
+
+    <!-- Main CSS-->
+    <link href="css/main.css" rel="stylesheet" media="all">
+
 </head>
 <body>
 
 <!-- navigation -->
+
 <?php include_once('nav.php'); ?>
 
 <!-- membership header section -->
@@ -35,7 +49,6 @@
 	</div>
 </div>
 
-
 <!-- divider section -->
 <div class="divider">
 	<div class="container">
@@ -46,6 +59,7 @@
 					<h2>Abonnement de Base</h2>
 					<p> 100€/Year </p>
 					<p>Accès illimité aux outils et 100 points pour les pièces de rechange.</p>
+					<a href="membershipform.html" class="btn btn-default">Essayez maintenant</a>
 				</div>
 			</div>
 			<div class="col-md-4 col-sm-6">
@@ -54,6 +68,7 @@
 					<h2>Abonnement Illimité</h2>
 					<p> 300€/Year </p>
 					<p>Accès illimité aux outils et pièces de rechange</p>
+					<a href="membershipform.html" class="btn btn-default">Essayez maintenant</a>
 				</div>
 			</div>
 			<div class="col-md-4 col-sm-12">
@@ -63,6 +78,7 @@
 					<br>
 					<br>
 					<p>Achetez des points</p>
+					<a href="membershipform.html" class="btn btn-default">Essayez maintenant</a>
 				</div>
 			</div>
 		</div>

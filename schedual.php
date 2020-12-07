@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-	<title>Quick repair - Schedual</title>
+	<title>Quick repair - HORAIRE</title>
 	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
     <meta name="keywords" content="">
 	<meta name="description" content="">
@@ -36,7 +36,7 @@
 	</div>
 
 <!-- Schedual-->
-<h2 style="text-align:center">Schedual</h2>
+<h2 style="text-align:center">Horaire</h2>
     <table border="5" cellspacing="0" align="center">
         <!--<caption>Timetable</caption>-->
         <tr>
@@ -67,18 +67,18 @@
         </tr>
         <tr>
             <td align="center" height="50">
-                <b>Monday</b></td>
+                <b>Lundi</b></td>
             <td align="center" height="50"></td>
             <td align="center" height="50"></td>
             <td rowspan="5" align="center" height="50">
-                <h2>L<br>U<br>N<br>C<br>H</h2>
+                <h2>P<br>A<br>U<br>S<br>E</h2>
             </td>
             <td align="center" height="50"></td>
 			<td align="center" height="50"></td>
         </tr>
         <tr>
             <td align="center" height="50">
-                <b>Tuesday</b>
+                <b>Mardi</b>
             </td>
             <td align="center" height="50"></td>
             <td align="center" height="50"></td>
@@ -87,7 +87,7 @@
         </tr>
 		<tr>
             <td align="center" height="50">
-                <b>Wednesday</b>
+                <b>Mercredi</b>
             </td>
             <td align="center" height="50"></td>
             <td align="center" height="50"></td>
@@ -96,7 +96,7 @@
         </tr>
         <tr>
             <td align="center" height="50">
-                <b>Thursday</b>
+                <b>Jeudi</b>
             </td>
             <td align="center" height="50"></td>
             <td align="center" height="50"></td>
@@ -105,7 +105,7 @@
         </tr>
         <tr>
             <td align="center" height="50">
-                <b>Friday</b>
+                <b>Vendredi</b>
             </td>
             <td align="center" height="50"></td>
             <td align="center" height="50"></td>
@@ -114,7 +114,7 @@
         </tr>
         <tr>
             <td align="center" height="50">
-                <b>Saturday</b>
+                <b>Samedi</b>
             </td>
             <td colspan="5" align="center"
                 height="50">
@@ -122,7 +122,7 @@
         </tr>
 		<tr>
             <td align="center" height="50">
-                <b>Sunday</b>
+                <b>Dimanche</b>
             </td>
             <td colspan="5" align="center"
                 height="50">

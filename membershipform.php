@@ -1,4 +1,4 @@
- 
+
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -10,13 +10,14 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-<!-- 
+<!--
     <!-- stylesheet css -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/nivo-lightbox.css">
     <link rel="stylesheet" href="css/nivo_themes/default/default.css">
     <link rel="stylesheet" href="css/templatemo-style.css">
+    <link rel="stylesheet" href="css/style.css?v=<?=time();?>">
     <!-- google web font css -->
     <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
     <!-- Required meta tags-->
@@ -46,29 +47,8 @@
 <body>
     <!-- navigation -->
 
-    <div class="container">
-        <div class="navbar navbar-default navbar-static-top" role="navigation">
-            <div class="navbar-header">
-                <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon icon-bar"></span>
-                    <span class="icon icon-bar"></span>
-                    <span class="icon icon-bar"></span>
-                </button>
-                <a href="#" class="navbar-brand"><img src="images/logo.png" class="img-responsive" alt="logo"></a>
-            </div>
-            <div class="collapse navbar-collapse">
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="index.html"><i class="fa fa-home fa-3x"></i></a></li>
-                    <li><a href="about.html">À PROPOS DE NOUS</a></li>
-                    <li><a href="membership.html" data-toggle="tooltip" data-placement="bottom" title="Rejoignez-nous en cliquant ici">ADHÉSION</a></li>
-                    <li><a href="contact.html">CONTACT</a></li>
-                    <li><a href="schedual.html">HORAIRE</a></li>
-                    <li><a href="connexion.html" data-toggle="tooltip" data-placement="bottom" title="Vous avez déjà un compte, connectez vous en cliquant ici">CONNEXION</a></li>
-                </ul>
-            </div>
-        </div>
-    </div>  
- 
+    <?php include_once('nav.php'); ?>
+
   <!-- form -->
 <div class="page-wrapper bg-gra-01 p-t-180 p-b-100 font-poppins">
         <div class="wrapper wrapper--w780">
@@ -99,7 +79,7 @@
                         <div class="input-group">
                             <input class="input--style-3" type="text" placeholder="Addresse" name="adresse">
                         </div>
-                       
+
                         <div class="input-group">
                             <div class="rs-select2 js-select-simple select--no-search">
                                 <select name="abonnement">
@@ -119,7 +99,7 @@
                             <button class="btn btn--pill btn--green" type="submit">Soumettre</button>
                         </div>
                     </form>
-                    
+
                 </div>
             </div>
         </div>
@@ -146,9 +126,9 @@
         </div>
     </div>
 </div>
-        <!-- javascript js -->  
+        <!-- javascript js -->
 <script src="js/jquery.js"></script>
-<script src="js/bootstrap.min.js"></script> 
+<script src="js/bootstrap.min.js"></script>
 <script src="js/nivo-lightbox.min.js"></script>
 <script src="js/custom.js"></script>
 

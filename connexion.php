@@ -8,8 +8,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=Edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- 
-
+    <!--
         <!-- stylesheet css -->
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/font-awesome.min.css">
@@ -19,33 +18,10 @@
 
     </head>
     <body>
-    
+
 <!-- navigation -->
 
-    <div class="container">
-        <div class="navbar navbar-default navbar-static-top" role="navigation">
-            <div class="navbar-header">
-                <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon icon-bar"></span>
-                    <span class="icon icon-bar"></span>
-                    <span class="icon icon-bar"></span>
-                </button>
-                <a href="#" class="navbar-brand"><img src="images/logo.png" class="img-responsive" alt="logo"></a>
-            </div>
-            <div class="collapse navbar-collapse">
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="index.html"><i class="fa fa-home fa-3x"></i></a></li>
-                    <li><a href="about.html">À PROPOS DE NOUS</a></li>
-                    <li><a href="membership.html" data-toggle="tooltip" data-placement="bottom" title="Rejoignez-nous en cliquant ici">ADHÉSION</a></li>
-                    <li><a href="contact.html">CONTACT</a></li>
-                    <li><a href="schedual.html">HORAIRE</a></li>
-                    <li><a href="connexion.html" data-toggle="tooltip" data-placement="bottom" title="Vous avez déjà un compte, connectez vous en cliquant ici">CONNEXION</a></li>
-
-
-                </ul>
-            </div>
-        </div>
-    </div>
+    <?php include_once('nav.php'); ?>
 
 <head>
     <!-- Required meta tags-->
@@ -90,11 +66,11 @@
                             <button class="btn btn--pill btn--green" type="submit" class="active">Connexion</button>
                         </div>
                         <div>
-                         <input class="input--style-3" type="text" placeholder=" " name="espace ">   
+                         <input class="input--style-3" type="text" placeholder=" " name="espace ">
                         <a href="membershipform.html">Vous avez pas encore un compte? Inscrivez-vous </a>
                         </div>
                     </form>
-                    
+
                 </div>
             </div>
         </div>
@@ -119,9 +95,9 @@
             </div>
         </div>
     </div>
-    <!-- javascript js -->  
+    <!-- javascript js -->
     <script src="js/jquery.js"></script>
-    <script src="js/bootstrap.min.js"></script> 
+    <script src="js/bootstrap.min.js"></script>
     <script src="js/nivo-lightbox.min.js"></script>
     <script src="js/custom.js"></script>
 

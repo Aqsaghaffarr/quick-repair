@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
 	<title>Quick repair - Contact</title>
 	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
@@ -24,6 +24,7 @@
 <body>
 
 <!-- navigation -->
+
 <?php include_once('nav.php'); ?>
 
 <!-- contact header section -->
