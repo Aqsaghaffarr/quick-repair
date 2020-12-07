@@ -84,7 +84,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-6 col-sm-12">
-				<img src="images/about-img.jpg" width="500" height="600">
+				<img src="images/recyclage2.jpg" width="500" height="600">
 			</div>
 			<div class="col-md-6 col-sm-12 about-des">
 				<h2>Ayez un impact positif</h2>

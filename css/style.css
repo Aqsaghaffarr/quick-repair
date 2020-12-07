@@ -22,13 +22,6 @@
     margin-bottom: 24px;
 }
 
-#join-beta div button{
-    border-color: #c14000;
-    color: #c14000;
-    font-size: 24px;
-}
-
-#join-beta div button:hover{
-    background-color: #c14000;
-    color: #101010;
+#join-beta div a{
+    font-size: 20px;
 }
