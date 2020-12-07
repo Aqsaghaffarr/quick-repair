@@ -59,7 +59,7 @@
 					<h2>Abonnement de Base</h2>
 					<p> 100€/Year </p>
 					<p>Accès illimité aux outils et 100 points pour les pièces de rechange.</p>
-					<a href="membershipform.html" class="btn btn-default">Essayez maintenant</a>
+					<a href="membershipform.php" class="btn btn-default">Essayez maintenant</a>
 				</div>
 			</div>
 			<div class="col-md-4 col-sm-6">
@@ -68,7 +68,7 @@
 					<h2>Abonnement Illimité</h2>
 					<p> 300€/Year </p>
 					<p>Accès illimité aux outils et pièces de rechange</p>
-					<a href="membershipform.html" class="btn btn-default">Essayez maintenant</a>
+					<a href="membershipform.php" class="btn btn-default">Essayez maintenant</a>
 				</div>
 			</div>
 			<div class="col-md-4 col-sm-12">
@@ -78,7 +78,7 @@
 					<br>
 					<br>
 					<p>Achetez des points</p>
-					<a href="membershipform.html" class="btn btn-default">Essayez maintenant</a>
+					<a href="membershipform.php" class="btn btn-default">Essayez maintenant</a>
 				</div>
 			</div>
 		</div>
