@@ -48,7 +48,8 @@
 					<h2>Réparez facilement</h2>
 					<p>Découvrez l'expérience passionante de réparer votre propre appareil</p>
 					<form action="membership.php">
-					<button type="submit" class="btn btn-primary btn-sm" >Pré-inscription</button>
+					<a href="membership.php" class="btn btn-default">Pré-inscription</a>
+					<!-- <button type="submit" class="btn btn-primary btn-sm" >Pré-inscription</button> -->
 					</form>
 				</div>
 			</div>
@@ -58,7 +59,8 @@
 					<h2>En partenariat avec ...</h2>
 					<p>Le club bénéficie d'un accès privilégié aux pièces de réparation</p>
 					<form action="#devices">
-					<button type="submit" class="btn btn-primary btn-sm">Voir les partenaires</button>
+					<a href="#" class="btn btn-default">Voir les partenaires</a>
+					<!-- <button type="submit" class="btn btn-primary btn-sm">Voir les partenaires</button> -->
 					</form>
 				</div>
 			</div>
@@ -68,7 +70,8 @@
 					<h2>Système de crédits</h2>
 					<p>Soyez récompensés quand vous aidez les autres membres du club</p>
 					<form action="#try">
-					<button type="submit" class="btn btn-primary btn-sm">En savoir plus</button>
+					<a href="about.php" class="btn btn-default">En savoir plus</a>
+					<!-- <button type="submit" class="btn btn-primary btn-sm">En savoir plus</button> -->
 					</form>
 				</div>
 			</div>
@@ -88,7 +91,7 @@
 				<br>
 				<p>En 2019, plus de 50 millions de tonnes de déchets électroniques ont été produites. Il est temps que cela cesse !</p>
 				<p>Contribuez à réduire le gaspillage électronique en réparant votre appareil au lieu de le jeter.</p>
-				<a href="about.php" class="btn btn-default">Préinscrivez-vous</a>
+				<a href="membership.php" class="btn btn-default">Préinscrivez-vous</a>
 			</div>
 		</div>
 	</div>
@@ -163,7 +166,7 @@
 				<br>
 				<p>L'entraide est une valeur que nous valorisons !</p>
 				<p>Lorsque vous aidez un autre membre du club, vous recevez des points qui vous permettront d'obtenir des pièces de remplacement gratuitement.</p>
-				<a href="membership.php" class="btn btn-default">EN SAVOIR PLUS</a>
+				<a href="about.php" class="btn btn-default">EN SAVOIR PLUS</a>
 			</div>
 		</div>
 	</div>
@@ -182,7 +185,8 @@
 
 			<div class="text-center">
 				<form action="membership.php">
-				<button type="submit" class="btn btn-primary btn-sm" >Préinscrivez-vous au Club</button>
+				<a href="membership.php" class="btn btn-default">Préinscrivez-vous au Club</a>
+				<!-- <button type="submit" class="btn btn-primary btn-sm" >Préinscrivez-vous au Club</button> -->
 				</form>
 			</div>
 		</div>
