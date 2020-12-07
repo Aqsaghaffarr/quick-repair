@@ -31,7 +31,7 @@
 		<div class="row">
 			<div class="col-md-5 col-sm-3"></div>
 			<div class="col-md-7 col-sm-9">
-				<h3>Bienvenue chez</h3>
+				<h3>Bienvenue au</h3>
 				<h1 id="club-name">Repair Club <span>[BETA]</span></h1>
 			</div>
 		</div>
@@ -45,30 +45,30 @@
 			<div class="col-md-4 col-sm-6">
 				<div class="divider-wrapper divider-one">
 					<i class="fa fa-wrench"></i>
-					<h2>Réparation et prix garantis</h2>
-					<p>Si nous ne parvenons pas à réparer votre produit, vous recevrez un nouveau sans frais supplémentaires.</p>
-					<form action="#evaluation">
-					<button type="submit" class="btn btn-primary btn-sm" >Auto-évaluation</button>
+					<h2>Réparez facilement</h2>
+					<p>Découvrez l'expérience passionante de réparer votre propre appareil</p>
+					<form action="membership.php">
+					<button type="submit" class="btn btn-primary btn-sm" >Pré-inscription</button>
 					</form>
 				</div>
 			</div>
 			<div class="col-md-4 col-sm-6">
 				<div class="divider-wrapper divider-two">
 					<i class="fa fa-shopping-cart"></i>
-					<h2>Des milliers de produits</h2>
-					<p>Notre équipe peut prendre en charge une large gamme de produits.</p>
+					<h2>En partenariat avec ...</h2>
+					<p>Le club bénéficie d'un accès privilégié aux pièces de réparation</p>
 					<form action="#devices">
-					<button type="submit" class="btn btn-primary btn-sm">Voir les Produits</button>
+					<button type="submit" class="btn btn-primary btn-sm">Voir les partenaires</button>
 					</form>
 				</div>
 			</div>
 			<div class="col-md-4 col-sm-12">
 				<div class="divider-wrapper divider-three">
 					<i class="fa fa-truck"></i>
-					<h2>Un service ultra-rapide</h2>
-					<p>Vous pourrez à nouveau profiter de votre appareil d'ici 48 heures, c'est certain.</p>
+					<h2>Système de crédits</h2>
+					<p>Soyez récompensés quand vous aidez les autres membres du club</p>
 					<form action="#try">
-					<button type="submit" class="btn btn-primary btn-sm">Essayez le Service!</button>
+					<button type="submit" class="btn btn-primary btn-sm">En savoir plus</button>
 					</form>
 				</div>
 			</div>
@@ -76,7 +76,7 @@
 	</div>
 </div>
 
-<!-- about section -->
+<!-- "about" section -->
 <div id="about">
 	<div class="container">
 		<div class="row">
@@ -84,35 +84,36 @@
 				<img src="images/about-img.jpg" width="500" height="600">
 			</div>
 			<div class="col-md-6 col-sm-12 about-des">
-				<h2>Self repairing cafe</h2>
+				<h2>Ayez un impact positif</h2>
 				<br>
-				<p>We invite you to join our self-repairing club where you can enjoy the exciting process of repairing your own device. </p>
-				<p>You want to know more about us? </p>
-				<a href="about.php" class="btn btn-default">LEARN MORE</a>
+				<p>En 2019, plus de 50 millions de tonnes de déchets électroniques ont été produites. Il est temps que cela cesse !</p>
+				<p>Contribuez à réduire le gaspillage électronique en réparant votre appareil au lieu de le jeter.</p>
+				<a href="about.php" class="btn btn-default">Préinscrivez-vous</a>
 			</div>
 		</div>
 	</div>
 </div>
 
 
-<!-- self evaluation section -->
+<!-- section -->
 <div id="evaluation">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-6 col-sm-12 about-des">
-				<h2>Estimate price</h2>
+				<h2>Faites-vous aider</h2>
 				<br>
-				<p>We do not have "flat rate" repair charges. We offer a customized repair price based on what we find during evaluation. </p>
-				<a href="evaluation.php" class="btn btn-default">Try self evaluation </a>
+				<p>Réparez vous-même votre produit, avec l'aide d'autres membres du clubs et de nos collaborateurs.</p>
+				<br/>
+				<a href="about.php" class="btn btn-default">EN SAVOIR PLUS</a>
 			</div>
 			<div class="col-md-6 col-sm-12">
-				<img src="images/bg.jpg" width="500" height="600">
+				<img src="images/people-helping.jpeg" width="500" height="600">
 			</div>
 		</div>
 	</div>
 </div>
 
-<!-- test service -->
+<!-- t -->
 <div id="try">
 	<div class="container">
 		<div class="row">
@@ -120,27 +121,69 @@
 				<img src="images/try.jpg" width="500" height="600">
 			</div>
 			<div class="col-md-6 col-sm-12 about-des">
-				<h2>Try the service now</h2>
-				<br>
-				<a href="#" class="btn btn-default"> Contact form</a>
+				<h2>Réparation rapide</h2>
+				<br/>
+				<p>Grâce à nos partenaires, nous vous offrons un accès rapide et privilégié aux pièces de remplacement. </p>
+				<p>Nous avons des miliers de pièces en stock, de l'écran de téléphone à la plus petite pièce de votre machine àn laver.</p>
+				<br/>
+				<a href="#" class="btn btn-default">Voir les partenaires</a>
 			</div>
 
 		</div>
 	</div>
 </div>
-<!-- devices section -->
+<!-- section -->
 <div id="devices">
 	<div class="container">
 		<div class="row">
 
 			<div class="col-md-6 col-sm-12 about-des">
-				<h2>Devices</h2>
-				<br>
-				<p>Our team can handle a wide range of device.</p>
-				<a href="#" class="btn btn-default">See the devices</a>
+				<h2>Ne payez que pour les pièces</h2>
+				<br/>
+				<p>Avec notre abonnement, vous ne payez que pour les pièces de remplacement. L'accès au club, aux outils et l'aide sont OFFERTS.</p>
+				<p></p>
+				<br/>
+				<a href="membership.php" class="btn btn-default">Découvrir l'offre</a>
 			</div>
 			<div class="col-md-6 col-sm-12">
 				<img src="images/home-bgg.jpg" width="700" height="600">
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="last">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6 col-sm-12">
+				<img src="images/about-img.jpg" width="500" height="600">
+			</div>
+			<div class="col-md-6 col-sm-12 about-des">
+				<h2>Nous récompensons l'entraide</h2>
+				<br>
+				<p>L'entraide est une valeur que nous valorisons !</p>
+				<p>Lorsque vous aidez un autre membre du club, vous recevez des points qui vous permettront d'obtenir des pièces de remplacement gratuitement.</p>
+				<a href="membership.php" class="btn btn-default">EN SAVOIR PLUS</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Join beta -->
+
+<div id="join-beta">
+	<div class="container">
+		<div class="row">
+			<div class="text-center">
+				<h2>Soyez informés dès le lancement officiel</h2>
+				<br/>
+				<p>Inscrivez-vous dès maintenant pour être les premiers informés du lancement du Club !</p>
+			</div>
+
+			<div class="text-center">
+				<form action="membership.php">
+				<button type="submit" class="btn btn-primary btn-sm" >Préinscrivez-vous au Club</button>
+				</form>
 			</div>
 		</div>
 	</div>
