@@ -1,35 +1,4 @@
-Skip to content
-Search or jump to…
-
-Pull requests
-Issues
-Marketplace
-Explore
  
-@Aqsaghaffarr 
-Aqsaghaffarr
-/
-quick-repair.github.io
-1
-00
-Code
-Issues
-Pull requests
-Actions
-Projects
-Wiki
-Security
-Insights
-Settings
-quick-repair.github.io/evaluation.html
-@Sanae97
-Sanae97 Add files via upload
-Latest commit 5849cc7 1 hour ago
- History
- 2 contributors
-@Aqsaghaffarr@Sanae97
-163 lines (149 sloc)  7.88 KB
-  
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -98,14 +67,22 @@ Latest commit 5849cc7 1 hour ago
                 </ul>
             </div>
         </div>
-    </div>      
-    <div class="page-wrapper bg-gra-01 p-t-180 p-b-100 font-poppins">
+    </div>  
+ 
+  <!-- form -->
+<div class="page-wrapper bg-gra-01 p-t-180 p-b-100 font-poppins">
         <div class="wrapper wrapper--w780">
             <div class="card card-3">
                 <div class="card-heading"></div>
                 <div class="card-body">
-                    <h2 class="title">Evaluation</h2>
+                    <h2 class="title">Inscription</h2>
                     <form method="POST">
+                        <div class="input-group">
+                            <input class="input--style-3" type="text" placeholder="Nom de famille" name="nom de famille">
+                        </div>
+                        <div class="input-group">
+                            <input class="input--style-3" type="text" placeholder="Prénom" name="prénom">
+                        </div>
                         <div class="input-group">
                             <input class="input--style-3" type="email" placeholder="Adresse de messagerie" name="adresse de messagerie" aria-describedby="emailHelp">
                         </div>
@@ -113,34 +90,30 @@ Latest commit 5849cc7 1 hour ago
                             <input class="input--style-3" type="password" placeholder="Mot de passe" name="mot de passe">
                         </div>
                         <div class="input-group">
-                            <input class="input--style-3 js-datepicker" type="text" placeholder="Date" name="date">
+                            <input class="input--style-3" type="text" placeholder="Numéro de téléphone" name="numéro de téléphone">
+                        </div>
+                        <div class="input-group">
+                            <input class="input--style-3 js-datepicker" type="text" placeholder="Date de naissance" name="date de naissance">
                             <i class="zmdi zmdi-calendar-note input-icon js-btn-calendar"></i>
                         </div>
                         <div class="input-group">
+                            <input class="input--style-3" type="text" placeholder="Addresse" name="adresse">
+                        </div>
+                       
+                        <div class="input-group">
                             <div class="rs-select2 js-select-simple select--no-search">
-                                <select name="device">
-                                    <option disabled="disabled" selected="selected">Type d'appareil </option>
-                                    <option>Téléphone classique</option>
-                                    <option>Smartphone</option>
-                                    <option>Ordinateur portable</option>
-                                    <option>Ordinateur bureau</option>
-                                    <option>Télévision</option>
-                                    <option>Smart TV</option>
-                                    <option>Appareil électroménager</option>
-                                    <option>Autre</option>
+                                <select name="abonnement">
+                                    <option disabled="disabled" selected="selected">Type d'abonnement</option>
+                                    <option>Devenir client du club</option>
+                                    <option>Devenir membre du club</option>
+                                    <option>Rejoindre l'équipe</option>
                                 </select>
                                 <div class="select-dropdown"></div>
                             </div>
                         </div>
-                        <div class="input-group">
-                            <div class="rs-select2 js-select-simple select--no-search">
-                                <select name="evaluation">
-                                    <option disabled="disabled" selected="selected">Type d'évaluation</option>
-                                    <option>Apprendre à réparer votre propre appareil</option>
-                                    <option>Attribuer votre appareil à nos meilleurs techniciens</option>
-                                </select>
-                                <div class="select-dropdown"></div>
-                            </div>
+                         <div class="input-group">
+                            <button class="input--style-3" type="text">Accepter les régles et les conditions</button>
+                            <input type="checkbox" id="accept-terms" class="form-check-input" required>
                         </div>
                         <div class="p-t-10">
                             <button class="btn btn--pill btn--green" type="submit">Soumettre</button>
@@ -151,6 +124,7 @@ Latest commit 5849cc7 1 hour ago
             </div>
         </div>
     </div>
+
 
         <!-- copyright section -->
 <div class="copyright">
@@ -192,15 +166,3 @@ Latest commit 5849cc7 1 hour ago
 
 </html>
 <!-- end document-->
-© 2020 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Help
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
