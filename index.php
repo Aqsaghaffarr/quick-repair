@@ -58,9 +58,8 @@
 					<i class="fa fa-shopping-cart"></i>
 					<h2>En partenariat avec ...</h2>
 					<p>Le club bénéficie d'un accès privilégié aux pièces de réparation</p>
-					<form action="#devices">
-					<a id ="patner" class="btn btn-default">Voir les partenaires</a>
-					<!-- <button type="submit" class="btn btn-primary btn-sm">Voir les partenaires</button> -->
+					<form action="#patner">
+					<button type="submit" class="btn btn-primary btn-sm">Voir les partenaires</button>
 					</form>
 				</div>
 			</div>
@@ -69,10 +68,9 @@
 					<i class="fa fa-truck"></i>
 					<h2>Système de crédits</h2>
 					<p>Soyez récompensés quand vous aidez les autres membres du club</p>
-					<form action="#try">
 					<a href="about.php" class="btn btn-default">En savoir plus</a>
 					<!-- <button type="submit" class="btn btn-primary btn-sm">En savoir plus</button> -->
-					</form>
+					
 				</div>
 			</div>
 		</div>
