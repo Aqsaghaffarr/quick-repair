@@ -59,7 +59,7 @@
 					<h2>En partenariat avec ...</h2>
 					<p>Le club bénéficie d'un accès privilégié aux pièces de réparation</p>
 					<form action="#devices">
-					<a href="#" class="btn btn-default">Voir les partenaires</a>
+					<a id ="patner" class="btn btn-default">Voir les partenaires</a>
 					<!-- <button type="submit" class="btn btn-primary btn-sm">Voir les partenaires</button> -->
 					</form>
 				</div>
@@ -117,7 +117,7 @@
 </div>
 
 <!-- t -->
-<div id="try">
+<div id="patner">
 	<div class="container">
 		<div class="row">
 		<div class="col-md-6 col-sm-12">
