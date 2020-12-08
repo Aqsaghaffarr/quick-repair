@@ -23,7 +23,9 @@
 
 <!-- navigation -->
 
-<?php include_once('nav.php'); ?>
+<?php
+$page='about';
+include_once('nav.php'); ?>
 
 <!-- about header section -->
 	<div id="about-header">

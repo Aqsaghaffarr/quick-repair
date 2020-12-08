@@ -23,7 +23,9 @@
 <body>
 
 <!-- navigation -->
-<?php include_once('nav.php'); ?>
+<?php
+$page = 'index';
+include_once('nav.php'); ?>
 
 <!-- home section -->
 <div id="home">
@@ -70,7 +72,7 @@
 					<p>Soyez récompensés quand vous aidez les autres membres du club</p>
 					<a href="about.php" class="btn btn-default">En savoir plus</a>
 					<!-- <button type="submit" class="btn btn-primary btn-sm">En savoir plus</button> -->
-					
+
 				</div>
 			</div>
 		</div>

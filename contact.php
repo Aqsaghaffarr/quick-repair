@@ -25,7 +25,9 @@
 
 <!-- navigation -->
 
-<?php include_once('nav.php'); ?>
+<?php
+$page='contact';
+include_once('nav.php'); ?>
 
 <!-- contact header section -->
 <div id="contact-header">
