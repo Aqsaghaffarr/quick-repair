@@ -1,0 +1,38 @@
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+}
+
+/* other */
+.try-now{
+    text-align: center;
+    font-size: 26px;
+    max-width: 90%;
+    white-space: normal;
+    margin-bottom: 32px;
+}
+
+.why-us-ul li{
+ list-style-type: none !important;
+ padding: 16px 24px;
+}
+.why-us-ul li img{
+ margin-right: 20px;
+}
+
+#products-btns img{
+    margin-right: 20px;
+}
+#products-btns button{
+    margin: 6px 4px;
+}
