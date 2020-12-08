@@ -1,6 +1,6 @@
 <?php
 date_default_timezone_set('UTC');
-if(isset($_GET["user_id"]) && isset($_POST["type"]) && isset($_POST["name"])){
+if(isset($_GET["user_id"]) && isset($_POST["abonnement"])){
     $pdo_options[PDO::ATTR_ERRMODE] = PDO::ERRMODE_EXCEPTION;
     $online = False
     if ($online) {
@@ -9,17 +9,14 @@ if(isset($_GET["user_id"]) && isset($_POST["type"]) && isset($_POST["name"])){
         $bdd = new PDO('mysql:host=localhost;dbname=innovation_prototype_2;charset=utf8', 'root', '', $pdo_options);
     }
     try{
-        $req = $bdd->prepare('INSERT INTO devices SET date = :date, name= :name, type= :type, user_id= :user_id');
+        $req = $bdd->prepare('INSERT INTO pre_inscription SET abonnement = :abonnement WHERE user_id= :user_id');
         $req->execute(array(
-            'date' => date(DATE_RFC2822),
-            'name' => $_POST["name"],
-            'type' => $_POST["type"],
+            'abonnement' => $_POST["abonnement"],
             'user_id' => $_POST["user_id"]
         ));
     }catch(Exception $e){
         die('Error : '.$e->getMessage());
     }
-    $user_id = $_GET['uid'];
-    header("Location: ../joined.php?uid=".$user_id);
+    header("Location: ../joined.php");
 }
 ?>
