@@ -8,10 +8,11 @@ if(isset($_POST["name"]) && isset($_POST["surname"]) && isset($_POST["email"])){
     } else {
         $bdd = new PDO('mysql:host=localhost;dbname=innovation_prototype_2;charset=utf8', 'root', '', $pdo_options);
     }
+    $date = date(DATE_RFC2822)
     try{
-        $req = $bdd->prepare('INSERT INTO stats SET date = :date, name= :name, surname= :surname, location= :location, email= :email, ip = :ip');
+        $req = $bdd->prepare('INSERT INTO pre_inscription SET date = :date, name= :name, surname= :surname, location= :location, email= :email, ip = :ip');
         $req->execute(array(
-            'date' => date(DATE_RFC2822),
+            'date' => $date,
             'name' => $_POST["name"],
             'surname' => $_POST["surname"],
             'location' => $_POST["location"],
@@ -21,6 +22,15 @@ if(isset($_POST["name"]) && isset($_POST["surname"]) && isset($_POST["email"])){
     }catch(Exception $e){
         die('Error : '.$e->getMessage());
     }
-    header("Location: form2.php");
+    # get user_id
+    $answer = $bdd->prepare('SELECT id FROM pre_inscription WHERE name =:name AND date = :date');
+    $answer->execute(array(
+	    'name' => $_POST['name']
+        'date' => $date,
+	));
+    while($data = $answer->fetch()){
+        $user_id = $data["id"]
+    }$answer->closeCursor();
+    header("Location: form2.php?uid=".$user_id);
 }
 ?>
