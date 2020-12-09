@@ -75,8 +75,8 @@
 							  <label for="img">*Select image:</label>
 								  <input type="file" id="img" name="img" accept="image/*">
 						</form>
-						<form class="p-t-10" onclick="clicked(event)" action="index.php" >
-                            <button class="btn btn--pill btn--green" type="submit">Soumettre</button>
+						<form class="p-t-10" action="membership.php" >
+                            <button class="btn btn--pill btn--green" type="submit">Continuer</button>
                         </form>
                     </form>
 
