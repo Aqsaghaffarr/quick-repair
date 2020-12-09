@@ -1,5 +1,6 @@
 
 
+
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -75,8 +76,11 @@
 							  <label for="img">*Select image:</label>
 								  <input type="file" id="img" name="img" accept="image/*">
 						</form>
+						<br>
+						
 						<form class="p-t-10" action="membership.php" >
-                            <button class="btn btn--pill btn--green" type="submit">Continuer</button>
+						<h2 class="title">Obtenir un Abonnement</h2>
+						<button class="btn btn--pill btn--green" type="submit">Continuer</button>
                         </form>
                     </form>
 
