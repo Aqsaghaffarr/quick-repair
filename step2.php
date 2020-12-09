@@ -1,4 +1,5 @@
 
+
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -59,22 +60,24 @@
                     <form method="POST">
 
                         <form name="form1" id="form1" action="/action_page.php">						
-							  <select name="option" id="option">
-								<option disabled="disabled" selected="selected"> Devices</option>
+							  <select name="device" id="device">
+								<option disabled="disabled" selected="selected"> Select Device</option>
 							  </select>
 							  <br><br>
-							  <select name="device" id="device">
-								<option disabled="disabled" selected="selected">Select device</option>
+							  <select name="brand" id="brand">
+								<option disabled="disabled" selected="selected">Select Brand</option>
 							  </select>
 							  <br><br>
 							  <select name="model" id="model">
-								<option disabled="disabled" selected="selected">Select model</option>
+								<option disabled="disabled" selected="selected">Select Model</option>
 							  </select>
 							  <br><br>
+							  <label for="img">*Select image:</label>
+								  <input type="file" id="img" name="img" accept="image/*">
 						</form>
-                        <div class="p-t-10">
+						<form class="p-t-10" onclick="clicked(event)" action="index.php" >
                             <button class="btn btn--pill btn--green" type="submit">Soumettre</button>
-                        </div>
+                        </form>
                     </form>
 
                 </div>
@@ -111,3 +114,4 @@
 
 </html>
 <!-- end document-->
+
