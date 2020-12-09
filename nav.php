@@ -16,7 +16,7 @@ if(!isset($page)){
 		<div class="collapse navbar-collapse">
 			<ul class="nav navbar-nav navbar-right">
 				<li><a href="index.php" <?php if($page=='index'){ ?> class="active" <?php } ?>><i class="fa fa-home fa-3x"></i></a></li>
-				<li><a href="membership.php" style="font-weight:bold;" <?php if($page=='join'){ ?> class="active" <?php } ?>>PRÉ-INSCRIPTION</a></li>
+				<li><a href="step2.php" style="font-weight:bold;" <?php if($page=='join'){ ?> class="active" <?php } ?>>PRÉ-INSCRIPTION</a></li>
 				<li><a href="about.php" <?php if($page=='about'){ ?> class="active" <?php } ?>>A PROPOS</a></li>
 				<li><a href="contact.php" <?php if($page=='contact'){ ?> class="active" <?php } ?>>CONTACT</a></li>
 			</ul>
