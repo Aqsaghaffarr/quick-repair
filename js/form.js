@@ -37,28 +37,34 @@ var optionObject = {
   }
 }
 window.onload = function() {
-  var optionSel = document.getElementById("option");
   var deviceSel = document.getElementById("device");
+  var brandSel = document.getElementById("brand");
   var modelSel = document.getElementById("model");
   for (var x in optionObject) {
-    optionSel.options[optionSel.options.length] = new Option(x, x);
-  }
-  optionSel.onchange = function() {
-    //empty models- and devices- dropdowns
-    modelSel.length = 1;
-    deviceSel.length = 1;
-    //display correct values
-    for (var y in optionObject[this.value]) {
-      deviceSel.options[deviceSel.options.length] = new Option(y, y);
-    }
+    deviceSel.options[deviceSel.options.length] = new Option(x, x);
   }
   deviceSel.onchange = function() {
+    //empty models- and brands- dropdowns
+    modelSel.length = 1;
+    brandSel.length = 1;
+    //display correct values
+    for (var y in optionObject[this.value]) {
+      brandSel.options[brandSel.options.length] = new Option(y, y);
+    }
+  }
+  brandSel.onchange = function() {
     //empty models dropdown
     modelSel.length = 1;
     //display correct values
-    var z = optionObject[optionSel.value][this.value];
+    var z = optionObject[deviceSel.value][this.value];
     for (var i = 0; i < z.length; i++) {
       modelSel.options[modelSel.options.length] = new Option(z[i], z[i]);
     }
   }
+}
+function clicked(e)
+{
+    if(!confirm('Are you sure?')) {
+        e.preventDefault();
+    }
 }
