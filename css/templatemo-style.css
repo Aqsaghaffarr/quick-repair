@@ -95,7 +95,7 @@ img {
     background: #202020;
     border: none;
     border-left: 6px solid #d54ab6;
-    padding-right: 40px;
+    padding-right: 20px;
     margin: 0 !important;
     position: relative;
     top: 20px;
@@ -260,10 +260,10 @@ img {
 
 /* membership section */
 #membership-header {
-  background: url('../images/membership-header.jpg') no-repeat;
+  background: url('../images/rejoindre.jpeg') no-repeat;
   background-size: cover;
   background-position: center;
-  min-height: 500px;
+  min-height: 320px;
   padding-top: 160px;
 }
 #membership {

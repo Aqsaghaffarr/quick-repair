@@ -1,6 +1,6 @@
 <?php
 date_default_timezone_set('UTC');
-if(isset($_GET["user_id"]) && isset($_POST["abonnement"])){
+if(isset($_GET["uid"]) && isset($_GET["c"])){
     $pdo_options[PDO::ATTR_ERRMODE] = PDO::ERRMODE_EXCEPTION;
     $online = true;
     if ($online == true) {
@@ -9,14 +9,16 @@ if(isset($_GET["user_id"]) && isset($_POST["abonnement"])){
         $bdd = new PDO('mysql:host=localhost;dbname=innovation_prototype_2;charset=utf8', 'root', '', $pdo_options);
     }
     try{
-        $req = $bdd->prepare('INSERT INTO pre_inscription SET abonnement = :abonnement WHERE user_id= :user_id');
+        $req = $bdd->prepare('UPDATE pre_inscription SET abonnement = :abonnement WHERE id = :id');
         $req->execute(array(
-            'abonnement' => $_POST["abonnement"],
-            'user_id' => $_POST["user_id"]
+            'abonnement' => $_GET["c"],
+            'id' => $_GET["uid"]
         ));
     }catch(Exception $e){
         die('Error : '.$e->getMessage());
     }
-    header("Location: ../joined.php");
+    header("Location: ../index.php?uid=".$user_id."&success");
+}else{
+    header("Location: ../step3.php?uid=".$_GET['uid']."&fail");
 }
 ?>

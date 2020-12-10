@@ -27,6 +27,10 @@
 }
 
 /* Subscribe */
+#tarification{
+    margin: 20px -20px 0 -20px;
+}
+
 #tarification .divider-wrapper{
 	min-height: 350px;
 }
@@ -36,7 +40,14 @@
 	bottom: 20px;
 	left: 20px;
 	right: 20px;
+    font-size: 16px;
+    padding: 0 12px;
 }
+
+#tarification h2{
+    font-size: 19px !important;
+}
+
 #products-btns img{
     margin-right: 20px;
 }
@@ -44,4 +55,9 @@
     margin: 6px 4px;
     padding-top: 8px;
     padding-bottom: 8px;
+}
+
+.centered-title{
+    margin: auto;
+    margin-top: -20px;
 }

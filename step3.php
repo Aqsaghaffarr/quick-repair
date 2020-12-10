@@ -36,25 +36,26 @@
 
 <!-- navigation -->
 
-<?php 
-$page='membership';
-include_once('nav.php'); ?>
+<?php include_once('nav.php'); 
 
-<!-- membership header section -->
-<div id="membership-header">
-	<div class="container">
-		<div class="row">
-			<div class="centered-title">
-				<h1>Nos offres d'abonnements</h1>
-			</div>
-			<div class="col-md-12 col-sm-12"></div>
-		</div>
-	</div>
-</div>
-
+if(isset($_GET['uid'])){ 
+	$uid = $_GET['uid'];
+}else{
+	$uid = 0;
+}
+?>
 <!-- divider section -->
-<div class="divider" id="tarification">
-	<div class="container">
+<div class="page-wrapper bg-gra-01 p-t-60 p-b-100 font-poppins">
+        <div class="wrapper wrapper--w780 p-b-40">
+            <h1 class="text-center">Votre appareil a été ajouté.</h1>
+            <h3 class="text-center p-t-10">Nous aurions une dernière question pour vous.</h3>
+        </div>
+        <div class="wrapper wrapper--w780">
+            <div class="card card-3">
+                <div class="card-body">
+                    <h4>Le jour où le club ouvrira, quel type d'affiliation souhaiteriez-vous prendre:</h4>
+                    <p class="p-b-40">Votre réponse ne vous engage à rien.</p>
+                    <div class="divider" id="tarification">
 		<div class="row">
 			<div class="col-md-4 col-sm-6">
 				<div class="divider-wrapper divider-one">
@@ -62,7 +63,7 @@ include_once('nav.php'); ?>
 					<h2>Abonnement de Base</h2>
 					<p> 15€/mois </p>
 					<p>Accès jusqu'à 2 fois par semaine aux outils et 120 points* offerts pour les pièces de rechange.</p>
-					<a href="membershipform.php" class="btn btn-default">Se préinscrire (GRATUIT)</a>
+					<a href="server/add_abonnement.php?c=basique&uid=<?php echo $_GET['uid']; ?>" class="btn btn-default">Sélectionner</a>
 				</div>
 			</div>
 			<div class="col-md-4 col-sm-6">
@@ -71,7 +72,7 @@ include_once('nav.php'); ?>
 					<h2>Abonnement Suppérieur</h2>
 					<p> 25€/mois </p>
 					<p>Accès illimité aux outils et 240 points* offerts pour les pièces de rechange.</p>
-					<a href="membershipform.php" class="btn btn-default">Se préinscrire (GRATUIT)</a>
+					<a href="server/add_abonnement.php?c=supperieur&uid=<?php echo $_GET['uid']; ?>" class="btn btn-default">Sélectionner</a>
 				</div>
 			</div>
 			<div class="col-md-4 col-sm-12">
@@ -80,12 +81,15 @@ include_once('nav.php'); ?>
 					<h2>Collaborateur bénévole</h2>
 					<p> GRATUIT </p>
 					<p>Juste là pour aider ? Partagez vos compétences et soyez récompensés pour l'aide apportée.</p>
-					<a href="membershipform.php" class="btn btn-default">Se préinscrire (GRATUIT)</a>
+					<a href="server/add_abonnement.php?c=benevole&uid=<?php echo $_GET['uid']; ?>" class="btn btn-default">Sélectionner</a>
 				</div>
 			</div>
 		</div>
 	</div>
-	<p class="p-b-40">* Les points sont cumulables d'un mois à l'autre. 10 points équivallent à une valeur de 1€ en pièces de rechange.</p>
+	<p>* Les points sont cumulables d'un mois à l'autre. 10 points équivallent à une valeur de 1€ en pièces de rechange.</p>
+                </div>
+            </div>
+        </div>
 </div>
 
 <!-- membership section -->

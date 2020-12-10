@@ -8,14 +8,13 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-<!--
 	<!-- stylesheet css -->
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/nivo-lightbox.css">
 	<link rel="stylesheet" href="css/nivo_themes/default/default.css">
 	<link rel="stylesheet" href="css/templatemo-style.css">
-	<link rel="stylesheet" href="css/style.css?v=<?=time();?>">
+	<link rel="stylesheet" href="css/style.css">
 	<!-- google web font css -->
 	<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 
@@ -53,10 +52,7 @@ include_once('nav.php'); ?>
 					<i class="fa fa-wrench"></i>
 					<h2>Réparez facilement</h2>
 					<p>Découvrez l'expérience passionante de réparer votre propre appareil</p>
-					<form action="membership.php">
-					<a href="membership.php" class="btn btn-default">Pré-inscription</a>
-					<!-- <button type="submit" class="btn btn-primary btn-sm" >Pré-inscription</button> -->
-					</form>
+					<a href="membershipform.php" class="btn btn-primary btn-sm" >Pré-inscription</a>
 				</div>
 			</div>
 			<div class="col-md-4 col-sm-6">
@@ -64,9 +60,7 @@ include_once('nav.php'); ?>
 					<i class="fa fa-shopping-cart"></i>
 					<h2>Partenaire des commerces</h2>
 					<p>Le club bénéficie d'un accès privilégié aux pièces de réparation</p>
-					<form action="#partner">
-					<button type="submit" class="btn btn-primary btn-sm">En savoir plus</button>
-					</form>
+					<a href="#partner" class="btn btn-primary btn-sm">En savoir plus</a>
 				</div>
 			</div>
 			<div class="col-md-4 col-sm-12">
@@ -74,9 +68,7 @@ include_once('nav.php'); ?>
 					<i class="fa fa-truck"></i>
 					<h2>Système de crédits</h2>
 					<p>Soyez récompensés quand vous aidez les autres membres du club</p>
-					<a href="#points" class="btn btn-default">En savoir plus</a>
-					<!-- <button type="submit" class="btn btn-primary btn-sm">En savoir plus</button> -->
-
+					<a href="#points" class="btn btn-primary btn-sm">En savoir plus</a>
 				</div>
 			</div>
 		</div>
@@ -181,7 +173,7 @@ include_once('nav.php'); ?>
 <footer>
 	<div class="container">
 			<div class="col-md-6 col-sm-4">
-				<img src="images/logo.png" class="img-responsive" alt="logo">
+				<img src="images/logo2.png" class="img-responsive" alt="logo">
 			</div>
 
 			<div class="col-md-3 col-sm-4 newsletter">
@@ -214,6 +206,13 @@ include_once('nav.php'); ?>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/nivo-lightbox.min.js"></script>
 <script src="js/custom.js"></script>
-
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RG2Y36F46Y"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-RG2Y36F46Y');
+</script>
 </body>
 </html>

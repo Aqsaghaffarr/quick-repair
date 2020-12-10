@@ -9,7 +9,6 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-<!--
 
     <!-- stylesheet css -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -17,7 +16,7 @@
     <link rel="stylesheet" href="css/nivo-lightbox.css">
     <link rel="stylesheet" href="css/nivo_themes/default/default.css">
     <link rel="stylesheet" href="css/templatemo-style.css">
-    <link rel="stylesheet" href="css/style.css?v=<?=time();?>">
+    <link rel="stylesheet" href="css/style.css">
     <!-- google web font css -->
     <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
     <!-- Required meta tags-->
@@ -140,7 +139,7 @@
     <footer>
     	<div class="container">
     			<div class="col-md-5 col-sm-4">
-    				<img src="images/logo.png" class="img-responsive" alt="logo">
+    				<img src="images/logo2.png" class="img-responsive" alt="logo">
     			</div>
 
     			<div class="col-md-4 col-sm-4 newsletter">
@@ -267,6 +266,14 @@
     <!-- Main JS-->
     <script src="js/global.js"></script>
 
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RG2Y36F46Y"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-RG2Y36F46Y');
+</script>
 </body><!-- This templates was made by Colorlib (https://colorlib.com) -->
 
 </html>

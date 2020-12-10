@@ -20,7 +20,7 @@ if(isset($_GET["uid"]) && isset($_POST["device"]) && isset($_POST["brand"])){
         die('Error : '.$e->getMessage());
     }
     $user_id = $_GET['uid'];
-    header("Location: ../index.php?uid=".$user_id."&success");
+    header("Location: ../step3.php?uid=".$user_id."");
 }else{
     if(isset($_GET["uid"])){
         header("Location: ../step2.php?uid=".$_GET['uid']."&fail");
