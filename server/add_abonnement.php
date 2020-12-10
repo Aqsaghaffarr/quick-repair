@@ -2,8 +2,8 @@
 date_default_timezone_set('UTC');
 if(isset($_GET["user_id"]) && isset($_POST["abonnement"])){
     $pdo_options[PDO::ATTR_ERRMODE] = PDO::ERRMODE_EXCEPTION;
-    $online = False
-    if ($online) {
+    $online = true;
+    if ($online == true) {
         $bdd = new PDO('mysql:host=localhost;dbname=id15371027_datab;charset=utf8', 'id15371027_user', '&l()!Qa#6fF!w]0q', $pdo_options);
     } else {
         $bdd = new PDO('mysql:host=localhost;dbname=innovation_prototype_2;charset=utf8', 'root', '', $pdo_options);

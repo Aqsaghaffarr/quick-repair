@@ -50,34 +50,33 @@
 </div>
 
 <!-- divider section -->
-<div class="divider">
+<div class="divider" id="tarification">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-4 col-sm-6">
 				<div class="divider-wrapper divider-one">
 					<i class="fa fa-user-plus"></i>
 					<h2>Abonnement de Base</h2>
-					<p> 100€/Year </p>
-					<p>Accès illimité aux outils et 100 points pour les pièces de rechange.</p>
+					<p> 15€/mois </p>
+					<p>Accès jusqu'à 2 fois par semaine aux outils et 50 points offerts pour les pièces de rechange.</p>
 					<a href="membershipform.php" class="btn btn-default">Essayez maintenant</a>
 				</div>
 			</div>
 			<div class="col-md-4 col-sm-6">
 				<div class="divider-wrapper divider-two">
 					<i class="fa fa-users"></i>
-					<h2>Abonnement Illimité</h2>
-					<p> 300€/Year </p>
-					<p>Accès illimité aux outils et pièces de rechange</p>
+					<h2>Abonnement Suppérieur</h2>
+					<p> 25€/mois </p>
+					<p>Accès illimité aux outils et 100 offerts pour les pièces de rechange.</p>
 					<a href="membershipform.php" class="btn btn-default">Essayez maintenant</a>
 				</div>
 			</div>
 			<div class="col-md-4 col-sm-12">
 				<div class="divider-wrapper divider-three">
 					<i class="fa fa-cogs"></i>
-					<h2>Une seule réparation</h2>
-					<br>
-					<br>
-					<p>Achetez des points</p>
+					<h2>Collaborateur bénévole</h2>
+					<p> GRATUIT </p>
+					<p>Juste là pour aider ? Partagez vos compétences et soyez récompensés pour l'aide apportée.</p>
 					<a href="membershipform.php" class="btn btn-default">Essayez maintenant</a>
 				</div>
 			</div>
@@ -87,18 +86,16 @@
 
 <!-- membership section -->
 
-
 <!-- footer section -->
 <footer>
 	<div class="container">
-			<div class="col-md-5 col-sm-4">
+			<div class="col-md-6 col-sm-4">
 				<img src="images/logo.png" class="img-responsive" alt="logo">
 			</div>
 
-			<div class="col-md-4 col-sm-4 newsletter">
-				<p><i class="fa fa-phone"></i> +32-000-00-00-00 </p>
-				<p><i class="fa fa-envelope-o"></i> contact@quickrepair.com </p>
-				<p><i class="fa fa-globe"></i> www.quickrepair.com</p>
+			<div class="col-md-3 col-sm-4 newsletter">
+				<p><i class="fa fa-envelope-o"></i>contact@selfrepair.club</p>
+				<p><i class="fa fa-globe"></i> www.selfrepair.club</p>
 			</div>
 	</div>
 </footer>
@@ -107,17 +104,13 @@
 <div class="copyright">
 	<div class="container">
 		<div class="row">
-			<div class="col-md-6 col-sm-6">
-				<p>Copyright © 2084 Quick repair</p>
+			<div class="col-md-9 col-sm-6">
+				<p>Copyright © 2020 Self repair club</p>
 			</div>
-			<div class="col-md-6 col-sm-6">
+			<div class="col-md-3 col-sm-6">
 				<ul class="social-icons">
 					<li><a href="#" class="fa fa-facebook"></a></li>
-					<li><a href="#" class="fa fa-twitter"></a></li>
-					<li><a href="#" class="fa fa-dribbble"></a></li>
-					<li><a href="#" class="fa fa-pinterest"></a></li>
-					<li><a href="#" class="fa fa-behance"></a></li>
-					<li><a href="#" class="fa fa-envelope-o"></a></li>
+					<li><a href="mailto:contact@selfrepair.club" class="fa fa-envelope-o"></a></li>
 				</ul>
 			</div>
 		</div>

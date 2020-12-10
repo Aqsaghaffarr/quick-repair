@@ -3,7 +3,7 @@
 <html lang="fr">
 
 <head>
-    <title>Quick repair - Contact</title>
+    <title>Self Repair Club</title>
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
     <meta name="keywords" content="">
     <meta name="description" content="">
@@ -47,56 +47,45 @@
 <body>
     <!-- navigation -->
 
-    <?php include_once('nav.php'); ?>
+    <?php 
+    $page='join';
+    include_once('nav.php'); ?>
 
   <!-- form -->
-<div class="page-wrapper bg-gra-01 p-t-180 p-b-100 font-poppins">
+<div class="page-wrapper bg-gra-01 p-t-60 p-b-100 font-poppins">
+        <div class="wrapper wrapper--w780 p-b-40">
+            <h1 class="text-center">Préinscrivez-vous au Self Repair Club</h1>
+            <h3 class="text-center p-t-10">pour être informés dès le lancement du club</h3>
+        </div>
         <div class="wrapper wrapper--w780">
             <div class="card card-3">
                 <div class="card-heading2"></div>
                 <div class="card-body">
-                    <h2 class="title">Inscription</h2>
-                    <form method="POST">
+<?php if(isset($_GET["fail"])){ ?>
+                    <div class="alert alert-danger" role="alert">
+                        Veuillez remplir tous les champs
+                    </div>
+<?php } ?>
+                    <h2 class="title">Vos informations</h2>
+                    <form method="POST" action="server/register.php">
                         <div class="input-group">
-                            <input class="input--style-3" type="text" placeholder="Nom de famille" name="nom de famille">
+                            <input class="input--style-3" type="text" placeholder="Nom de famille" name="name">
                         </div>
                         <div class="input-group">
-                            <input class="input--style-3" type="text" placeholder="Prénom" name="prénom">
+                            <input class="input--style-3" type="text" placeholder="Prénom" name="surname">
                         </div>
                         <div class="input-group">
-                            <input class="input--style-3" type="email" placeholder="Adresse de messagerie" name="adresse de messagerie" aria-describedby="emailHelp">
+                            <input class="input--style-3" type="email" placeholder="Adresse de messagerie" name="email" aria-describedby="emailHelp">
                         </div>
                         <div class="input-group">
-                            <input class="input--style-3" type="password" placeholder="Mot de passe" name="mot de passe">
+                            <input class="input--style-3" type="text" placeholder="Ville" name="city">
                         </div>
-                        <div class="input-group">
-                            <input class="input--style-3" type="text" placeholder="Numéro de téléphone" name="numéro de téléphone">
-                        </div>
-                        <div class="input-group">
-                            <input class="input--style-3 js-datepicker" type="text" placeholder="Date de naissance" name="date de naissance">
-                            <i class="zmdi zmdi-calendar-note input-icon js-btn-calendar"></i>
-                        </div>
-                        <div class="input-group">
-                            <input class="input--style-3" type="text" placeholder="Addresse" name="adresse">
-                        </div>
-
-                        <div class="input-group">
-                            <div class="rs-select2 js-select-simple select--no-search">
-                                <select name="abonnement">
-                                    <option disabled="disabled" selected="selected">Type d'abonnement</option>
-                                    <option>Devenir client du club</option>
-                                    <option>Devenir membre du club</option>
-                                    <option>Rejoindre l'équipe</option>
-                                </select>
-                                <div class="select-dropdown"></div>
-                            </div>
-                        </div>
-                         <div class="input-group">
+                         <!-- <div class="input-group">
                             <button class="input--style-3" type="text">Accepter les régles et les conditions</button>
                             <input type="checkbox" id="accept-terms" class="form-check-input" required>
-                        </div>
-                        <div class="p-t-10">
-                            <button class="btn btn--pill btn--green" type="submit">Soumettre</button>
+                        </div> -->
+                        <div class="p-t-10 text-center">
+                            <button class="btn btn--pill btn--green" type="submit">Valider</button>
                         </div>
                     </form>
 
@@ -106,21 +95,17 @@
     </div>
 
 
-        <!-- copyright section -->
+<!-- copyright section -->
 <div class="copyright">
     <div class="container">
         <div class="row">
-            <div class="col-md-6 col-sm-6">
-                <p>Copyright © 2084 Quick repair</p>
+            <div class="col-md-9 col-sm-6">
+                <p>Copyright © 2020 Self repair club</p>
             </div>
-            <div class="col-md-6 col-sm-6">
+            <div class="col-md-3 col-sm-6">
                 <ul class="social-icons">
                     <li><a href="#" class="fa fa-facebook"></a></li>
-                    <li><a href="#" class="fa fa-twitter"></a></li>
-                    <li><a href="#" class="fa fa-dribbble"></a></li>
-                    <li><a href="#" class="fa fa-pinterest"></a></li>
-                    <li><a href="#" class="fa fa-behance"></a></li>
-                    <li><a href="#" class="fa fa-envelope-o"></a></li>
+                    <li><a href="mailto:contact@selfrepair.club" class="fa fa-envelope-o"></a></li>
                 </ul>
             </div>
         </div>

@@ -1,18 +1,15 @@
-
-
-
 <!DOCTYPE html>
 <html lang="fr">
 
 <head>
-    <title>Quick repair - Contact</title>
+    <title>Self Repair Club</title>
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
     <meta name="keywords" content="">
     <meta name="description" content="">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-<!--
+
     <!-- stylesheet css -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
@@ -52,36 +49,38 @@
     <?php include_once('nav.php'); ?>
 
   <!-- form -->
-<div class="page-wrapper bg-gra-01 p-t-180 p-b-100 font-poppins">
+<div class="page-wrapper bg-gra-01 p-t-60 p-b-100 font-poppins">
+        <div class="wrapper wrapper--w780 p-b-40">
+            <h1 class="text-center">Merci pour votre préinscription !</h1>
+            <h3 class="text-center p-t-10">Votre compte a bien été créé. </h3>
+        </div>
         <div class="wrapper wrapper--w780">
             <div class="card card-3">
                 <div class="card-heading2"></div>
                 <div class="card-body">
-                    <h2 class="title">Select your device</h2>
-                    <form method="POST">
+<?php if(isset($_GET["fail"])){ ?>
+                    <div class="alert alert-danger" role="alert">
+                        Veuillez remplir tous les champs
+                    </div>
+<?php } ?>
+                    <h4 class="p-b-40">Pour mieux anticiper les besoins de nos clients, nous aimerions savoir quels appareils vous pourriez vouloir réparer. Entrez un appareil de votre choix:</h4>
+<?php if(isset($_GET['uid'])){ ?>
+                    <form method="POST" name="form1" id="form1" action="server/add_device.php?uid=<?php echo $_GET['uid']; ?>">		
+<?php }else{ ?>
+                    <form method="POST" name="form1" id="form1" action="server/add_device.php?uid=0"> 
+<?php } ?>		        
+                        <div class="input-group">
+							  <select name="device" class="input--style-3" id="device" class="input--style-3">
+								<option disabled="disabled" selected="selected">Type d'appareil</option>
+							  </select>
+						</div>
+                        <div class="input-group">
+							  <select name="brand" class="input--style-3" id="brand">
+								<option disabled="disabled" selected="selected">Marque de l'appareil</option>
+							  </select>
+						</div>
 
-                        <form name="form1" id="form1" action="/action_page.php">						
-							  <select name="device" id="device">
-								<option disabled="disabled" selected="selected"> Select Device</option>
-							  </select>
-							  <br><br>
-							  <select name="brand" id="brand">
-								<option disabled="disabled" selected="selected">Select Brand</option>
-							  </select>
-							  <br><br>
-							  <select name="model" id="model">
-								<option disabled="disabled" selected="selected">Select Model</option>
-							  </select>
-							  <br><br>
-							  <label for="img">*Select image:</label>
-								  <input type="file" id="img" name="img" accept="image/*">
-						</form>
-						<br>
-						
-						<form class="p-t-10" action="membership.php" >
-						<h2 class="title">Obtenir un Abonnement</h2>
-						<button class="btn btn--pill btn--green" type="submit">Continuer</button>
-                        </form>
+						<button class="btn btn--pill btn--green" type="submit">Valider</button>
                     </form>
 
                 </div>
@@ -90,21 +89,17 @@
     </div>
 
 
-        <!-- copyright section -->
+<!-- copyright section -->
 <div class="copyright">
     <div class="container">
         <div class="row">
-            <div class="col-md-6 col-sm-6">
-                <p>Copyright © 2084 Quick repair</p>
+            <div class="col-md-9 col-sm-6">
+                <p>Copyright © 2020 Self repair club</p>
             </div>
-            <div class="col-md-6 col-sm-6">
+            <div class="col-md-3 col-sm-6">
                 <ul class="social-icons">
                     <li><a href="#" class="fa fa-facebook"></a></li>
-                    <li><a href="#" class="fa fa-twitter"></a></li>
-                    <li><a href="#" class="fa fa-dribbble"></a></li>
-                    <li><a href="#" class="fa fa-pinterest"></a></li>
-                    <li><a href="#" class="fa fa-behance"></a></li>
-                    <li><a href="#" class="fa fa-envelope-o"></a></li>
+                    <li><a href="mailto:contact@selfrepair.club" class="fa fa-envelope-o"></a></li>
                 </ul>
             </div>
         </div>

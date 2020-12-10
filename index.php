@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Quick repair</title>
+	<title>Self Repair Club</title>
 	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
     <meta name="keywords" content="">
 	<meta name="description" content="">
@@ -21,7 +21,11 @@
 
 </head>
 <body>
-
+<?php if(isset($_GET["success"])){ ?>
+        <div class="alert alert-success" role="alert">
+            Merci pour votre préinscription, vous serez recontactés dès le lancement du service !
+        </div>
+<?php } ?>
 <!-- navigation -->
 <?php
 $page = 'index';
@@ -31,10 +35,10 @@ include_once('nav.php'); ?>
 <div id="home">
 	<div class="container">
 		<div class="row">
-			<div class="col-md-5 col-sm-3"></div>
+			<div class="col-md-4 col-sm-3"></div>
 			<div class="col-md-7 col-sm-9">
-				<h3>Bienvenue au</h3>
-				<h1 id="club-name">Repair Club <span>[BETA]</span></h1>
+				<h3>Bienvenue chez</h3>
+				<h1 id="club-name">Self Repair Club <span>[BETA]</span></h1>
 			</div>
 		</div>
 	</div>
@@ -58,10 +62,10 @@ include_once('nav.php'); ?>
 			<div class="col-md-4 col-sm-6">
 				<div class="divider-wrapper divider-two">
 					<i class="fa fa-shopping-cart"></i>
-					<h2>En partenariat avec ...</h2>
+					<h2>Partenaire des commerces</h2>
 					<p>Le club bénéficie d'un accès privilégié aux pièces de réparation</p>
-					<form action="#patner">
-					<button type="submit" class="btn btn-primary btn-sm">Voir les partenaires</button>
+					<form action="#partner">
+					<button type="submit" class="btn btn-primary btn-sm">En savoir plus</button>
 					</form>
 				</div>
 			</div>
@@ -70,7 +74,7 @@ include_once('nav.php'); ?>
 					<i class="fa fa-truck"></i>
 					<h2>Système de crédits</h2>
 					<p>Soyez récompensés quand vous aidez les autres membres du club</p>
-					<a href="about.php" class="btn btn-default">En savoir plus</a>
+					<a href="#points" class="btn btn-default">En savoir plus</a>
 					<!-- <button type="submit" class="btn btn-primary btn-sm">En savoir plus</button> -->
 
 				</div>
@@ -90,62 +94,46 @@ include_once('nav.php'); ?>
 				<h2>Ayez un impact positif</h2>
 				<br>
 				<p>En 2019, plus de 50 millions de tonnes de déchets électroniques ont été produites. Il est temps que cela cesse !</p>
-				<p>Contribuez à réduire le gaspillage électronique en réparant votre appareil au lieu de le jeter.</p>
+				<p><b>Contribuez à réduire le gaspillage électronique</b> en réparant votre appareil au lieu de le jeter.</p>
 				<a href="membership.php" class="btn btn-default">Préinscrivez-vous</a>
 			</div>
 		</div>
 	</div>
-</div>
-
-
-<!-- section -->
-<div id="evaluation">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-6 col-sm-12 about-des">
 				<h2>Faites-vous aider</h2>
 				<br>
-				<p>Réparez vous-même votre produit, avec l'aide d'autres membres du clubs et de nos collaborateurs.</p>
-				<br/>
-				<a href="about.php" class="btn btn-default">EN SAVOIR PLUS</a>
+				<p>Chez Self Repair Club, c'est vous qui réparez votre appareil défectueux. Mais pas de panique, nous vous fournissons tout le matériel nécessaire, les pièces de rechange ainsi que <b>de l'aide pour réparer votre appareil</b>.</p>
+				<p>De plus, les pièces de rechange sont immédiatement disponibles grâce à nos partenaires. Vous pourrez donc <b>réutiliser votre produit dès le lendemain !</b></p>
 			</div>
 			<div class="col-md-6 col-sm-12">
 				<img src="images/people-helping.jpeg" width="500" height="600">
 			</div>
 		</div>
 	</div>
-</div>
-
-<!-- t -->
-<div id="patner">
-	<div class="container">
+	<div class="container" id="partner">
 		<div class="row">
 		<div class="col-md-6 col-sm-12">
 				<img src="images/try.jpg" width="500" height="600">
 			</div>
 			<div class="col-md-6 col-sm-12 about-des">
-				<h2>Réparation rapide</h2>
+				<h2>Réparation rapide grâce aux partenaires</h2>
 				<br/>
 				<p>Grâce à nos partenaires, nous vous offrons un accès rapide et privilégié aux pièces de remplacement. </p>
-				<p>Nous avons des miliers de pièces en stock, de l'écran de téléphone à la plus petite pièce de votre machine àn laver.</p>
-				<br/>
-				<a href="#" class="btn btn-default">Voir les partenaires</a>
+				<p>Vous êtes le <b>propriétaire d'un commerce</b> dans l'éléctronique ou l'électroménager et souhaitez prendre part au projet ? Contactez-nous pour en savoir plus.</p>
+				<a href="contact.php" class="btn btn-default">Nous contacter</a>
 			</div>
 
 		</div>
 	</div>
-</div>
-<!-- section -->
-<div id="devices">
 	<div class="container">
 		<div class="row">
 
 			<div class="col-md-6 col-sm-12 about-des">
 				<h2>Ne payez que pour les pièces</h2>
 				<br/>
-				<p>Avec notre abonnement, vous ne payez que pour les pièces de remplacement. L'accès au club, aux outils et l'aide sont OFFERTS.</p>
-				<p></p>
-				<br/>
+				<p>Avec notre abonnement, vous ne payez que pour les pièces de remplacement. <b>L'accès au club, aux outils et l'aide sont OFFERTS.</b></p>
 				<a href="membership.php" class="btn btn-default">Découvrir l'offre</a>
 			</div>
 			<div class="col-md-6 col-sm-12">
@@ -153,10 +141,7 @@ include_once('nav.php'); ?>
 			</div>
 		</div>
 	</div>
-</div>
-
-<div id="last">
-	<div class="container">
+	<div class="container" id="points">
 		<div class="row">
 			<div class="col-md-6 col-sm-12">
 				<img src="images/about-img.jpg" width="500" height="600">
@@ -165,8 +150,7 @@ include_once('nav.php'); ?>
 				<h2>Nous récompensons l'entraide</h2>
 				<br>
 				<p>L'entraide est une valeur que nous valorisons !</p>
-				<p>Lorsque vous aidez un autre membre du club, vous recevez des points qui vous permettront d'obtenir des pièces de remplacement gratuitement.</p>
-				<a href="about.php" class="btn btn-default">EN SAVOIR PLUS</a>
+				<p>Lorsque vous aidez un autre membre du club, vous recevez des points qui vous permettront <b>d'obtenir des pièces de remplacement gratuitement</b>.</p>
 			</div>
 		</div>
 	</div>
@@ -185,7 +169,7 @@ include_once('nav.php'); ?>
 
 			<div class="text-center">
 				<form action="membership.php">
-				<a href="membership.php" class="btn btn-default">Préinscrivez-vous au Club</a>
+				<a href="membershipform.php" class="btn btn-default">Préinscrivez-vous au Club</a>
 				<!-- <button type="submit" class="btn btn-primary btn-sm" >Préinscrivez-vous au Club</button> -->
 				</form>
 			</div>
@@ -196,14 +180,13 @@ include_once('nav.php'); ?>
 <!-- footer section -->
 <footer>
 	<div class="container">
-			<div class="col-md-5 col-sm-4">
+			<div class="col-md-6 col-sm-4">
 				<img src="images/logo.png" class="img-responsive" alt="logo">
 			</div>
 
-			<div class="col-md-4 col-sm-4 newsletter">
-				<p><i class="fa fa-phone"></i> +32-000-00-00-00 </p>
-				<p><i class="fa fa-envelope-o"></i> contact@quickrepair.com </p>
-				<p><i class="fa fa-globe"></i> www.quickrepair.com</p>
+			<div class="col-md-3 col-sm-4 newsletter">
+				<p><i class="fa fa-envelope-o"></i>contact@selfrepair.club</p>
+				<p><i class="fa fa-globe"></i> www.selfrepair.club</p>
 			</div>
 	</div>
 </footer>
@@ -212,17 +195,13 @@ include_once('nav.php'); ?>
 <div class="copyright">
 	<div class="container">
 		<div class="row">
-			<div class="col-md-6 col-sm-6">
-				<p>Copyright © 2084 Quick repair</p>
+			<div class="col-md-9 col-sm-6">
+				<p>Copyright © 2020 Self repair club</p>
 			</div>
-			<div class="col-md-6 col-sm-6">
+			<div class="col-md-3 col-sm-6">
 				<ul class="social-icons">
 					<li><a href="#" class="fa fa-facebook"></a></li>
-					<li><a href="#" class="fa fa-twitter"></a></li>
-					<li><a href="#" class="fa fa-dribbble"></a></li>
-					<li><a href="#" class="fa fa-pinterest"></a></li>
-					<li><a href="#" class="fa fa-behance"></a></li>
-					<li><a href="#" class="fa fa-envelope-o"></a></li>
+					<li><a href="mailto:contact@selfrepair.club" class="fa fa-envelope-o"></a></li>
 				</ul>
 			</div>
 		</div>

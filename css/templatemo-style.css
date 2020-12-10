@@ -347,7 +347,7 @@ img {
   background: url('../images/contact-header.jpg') no-repeat;
   background-size: cover;
   background-position: center;
-  min-height: 500px;
+  min-height: 360px;
   padding-top: 160px;
 }
 #contact {

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-	<title>Quick repair - HORAIRE</title>
+	<title>Self Repair Club</title>
 	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
     <meta name="keywords" content="">
 	<meta name="description" content="">
@@ -129,40 +129,36 @@
             </td>
         </tr>
     </table>
+    
 <!-- footer section -->
 <footer>
-	<div class="container">
-			<div class="col-md-5 col-sm-4">
-				<img src="images/logo.png" class="img-responsive" alt="logo">
-			</div>
+    <div class="container">
+            <div class="col-md-6 col-sm-4">
+                <img src="images/logo.png" class="img-responsive" alt="logo">
+            </div>
 
-			<div class="col-md-4 col-sm-4 newsletter">
-				<p><i class="fa fa-phone"></i> +32-000-00-00-00 </p>
-				<p><i class="fa fa-envelope-o"></i> contact@quickrepair.com </p>
-				<p><i class="fa fa-globe"></i> www.quickrepair.com</p>
-			</div>
-	</div>
+            <div class="col-md-3 col-sm-4 newsletter">
+                <p><i class="fa fa-envelope-o"></i>contact@selfrepair.club</p>
+                <p><i class="fa fa-globe"></i> www.selfrepair.club</p>
+            </div>
+    </div>
 </footer>
 
 <!-- copyright section -->
 <div class="copyright">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-6 col-sm-6">
-				<p>Copyright © 2084 Quick repair</p>
-			</div>
-			<div class="col-md-6 col-sm-6">
-				<ul class="social-icons">
-					<li><a href="#" class="fa fa-facebook"></a></li>
-					<li><a href="#" class="fa fa-twitter"></a></li>
-					<li><a href="#" class="fa fa-dribbble"></a></li>
-					<li><a href="#" class="fa fa-pinterest"></a></li>
-					<li><a href="#" class="fa fa-behance"></a></li>
-					<li><a href="#" class="fa fa-envelope-o"></a></li>
-				</ul>
-			</div>
-		</div>
-	</div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-9 col-sm-6">
+                <p>Copyright © 2020 Self repair club</p>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <ul class="social-icons">
+                    <li><a href="#" class="fa fa-facebook"></a></li>
+                    <li><a href="mailto:contact@selfrepair.club" class="fa fa-envelope-o"></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
 </div>
 
 
